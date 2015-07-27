@@ -36,6 +36,7 @@ module.exports = (grunt) ->
 			bsFiles:
 				src : [
 					distPath + "css/**"
+					distPath + "js/**"
 					distPath + "index.html"
 				]
 			options:
@@ -46,6 +47,9 @@ module.exports = (grunt) ->
 		watch:
 			options:
 				spawn: false
+			coffee:
+				files: [srcPath + "coffee/**/*.coffee"]
+				tasks: ["coffee"]
 			sass:
 				files: [srcPath + "scss/**/*.scss"]
 				tasks: ["compass"]
