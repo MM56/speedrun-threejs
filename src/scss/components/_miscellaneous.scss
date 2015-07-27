@@ -1,0 +1,66 @@
+#notifyElem, #__bs_notify__ {
+    display: none !important;
+}
+#orientation-notifier {
+	position: absolute;
+	z-index: 9999999;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display:none;
+	width: 100%;
+	height: 100%;
+	// background-color: $color-red-dark;
+
+	// .anim {
+	// 	display: none;
+	// 	$duration: 2s;
+	// 	$iteration: infinite;
+	// 	// @include animation-duration($duration);
+	// 	// @include animation-iteration-count($iteration);
+	// 	position:relative;
+	// 	margin:0 auto;
+	// 	top:50%;
+	// 	display: block!important;
+	// 	@include animation(rotateDevice $duration $iteration);
+
+	// 	&.rotateDevice {
+	// 		@include sprite($sprites-common-rotate_phone_icon);
+	// 	}
+	// }
+}
+
+.phone #orientation-notifier .anim { @include centerAbsolute(124px, 59px);}
+// .tablet #orientation-notifier .anim { @include centerAbsolute(250px, 194px);}
+
+::selection {
+	// background: $color-red-dark;
+}
+::-moz-selection {
+	// background: $color-red-dark;
+}
+
+#stats {
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    top: 0;
+}
+.ib {
+	display: inline-block;
+}
+a{
+	@include unselected;
+}
+
+.overlay{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+	background: rgba(0,0,0,0.6) !important;
+}
+

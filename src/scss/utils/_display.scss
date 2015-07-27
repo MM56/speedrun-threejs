@@ -1,0 +1,15 @@
+@mixin show($force: false) {
+	visibility: visible;
+	@include opacity(1);
+	@if $force {
+		display: block;
+	}
+}
+
+@mixin hide($force: false) {
+	visibility: hidden;
+	@include opacity(0);
+	@if $force {
+		display: none;
+	}
+}

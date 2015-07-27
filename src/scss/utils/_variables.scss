@@ -1,0 +1,29 @@
+
+	// _|_|_|                _|      _|
+	// _|    _|    _|_|_|  _|_|_|_|  _|_|_|
+	// _|_|_|    _|    _|    _|      _|    _|
+	// _|        _|    _|    _|      _|    _|
+	// _|          _|_|_|      _|_|  _|    _|
+
+$path-dist: "../";
+$path-public: $path-dist;
+$path-css: $path-public + "css/";
+$path-img: $path-public + "img/";
+$path-webfonts: $path-dist + "fonts/";
+
+	// _|_|_|_|                      _|
+	// _|        _|_|    _|_|_|    _|_|_|_|    _|_|_|
+	// _|_|_|  _|    _|  _|    _|    _|      _|_|
+	// _|      _|    _|  _|    _|    _|          _|_|
+	// _|        _|_|    _|    _|      _|_|  _|_|_|
+
+
+	//   _|_|_|            _|
+	// _|          _|_|    _|    _|_|    _|  _|_|    _|_|_|
+	// _|        _|    _|  _|  _|    _|  _|_|      _|_|
+	// _|        _|    _|  _|  _|    _|  _|            _|_|
+	//   _|_|_|    _|_|    _|    _|_|    _|        _|_|_|
+
+
+$sprites: sprite-map("base/*.png", $spacing:10px, $layout: vertical);
+$sprites2x: sprite-map("base2x/*.png", $spacing:10px, $layout: vertical);
